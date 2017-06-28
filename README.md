@@ -1,5 +1,5 @@
-﻿Taskbar puts a start menu and recent apps tray on top of your screen that's accessible at any time, increasing your productivity and turning your Android tablet (or phone) into a real multitasking machine!<br><br>On devices running Android 7.0+ (Nougat), Taskbar can also launch apps in freeform windows for a PC-like experience!  No root required!  (see below for instructions)<br><br>Also works great as an Android app launcher for Chromebooks! (Be sure to set your Chrome OS shelf to autohide)
-
+﻿### Openthos-7.1 StartupMenu
+#### Modify from TaskBar-master
 ## Features
 * Start menu - shows you all applications installed on the device, configurable as a list or as a grid
 * Recent apps tray - shows your most recently used apps and lets you easily switch between them
@@ -41,8 +41,3 @@ Taskbar includes support for ADW-style icon packs.  If you are an icon pack deve
     intent.putExtra("android.intent.extra.PACKAGE_NAME", "com.iconpack.name");
     startActivity(intent);
 
-## Contributors
-* Mark Morilla (app logo) (https://plus.google.com/106169552593075739372)
-* naofum (Japanese translation)
-* HardSer (Russian translation)
-* OfficialMITX (German translation)
