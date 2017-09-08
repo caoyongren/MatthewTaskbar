@@ -20,7 +20,7 @@
      * SendSettingsReceiver and ReceiveSettingsReceiver are not exposed
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.farmerbb.taskbar" >
+          package="com.masterman.taskbar" >
           android:versionCode="1"
           android:versionName="3.6-androidx86" >
 
@@ -28,10 +28,10 @@
         android:minSdkVersion="25"
         android:targetSdkVersion="25" />
 
-    <permission android:name="com.farmerbb.taskbar.androidx86.START_STOP_TASKBAR"
+    <permission android:name="com.masterman.taskbar.androidx86.START_STOP_TASKBAR"
         android:protectionLevel="signature" />
 
-    <permission android:name="com.farmerbb.taskbar.androidx86.ENABLE_DISABLE_HOME"
+    <permission android:name="com.masterman.taskbar.androidx86.ENABLE_DISABLE_HOME"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />

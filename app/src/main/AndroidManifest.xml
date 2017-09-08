@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.farmerbb.taskbar">
+          package="com.masterman.taskbar">
 
     <permission android:name="${applicationId}.START_STOP_TASKBAR"
         android:protectionLevel="signature" />
@@ -60,7 +60,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.masterman.taskbar.MainActivity"
             android:label="${appName}"
             android:launchMode="singleTask" >
             <intent-filter>
@@ -71,32 +71,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.InvisibleActivity"
+            android:name="com.masterman.taskbar.activity.InvisibleActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.InvisibleActivity"/>
         <activity
-            android:name=".activity.InvisibleActivityAlt"
+            android:name="com.masterman.taskbar.activity.InvisibleActivityAlt"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.Incognito"/>
         <activity
-            android:name=".activity.dark.InvisibleActivityAltDark"
+            android:name="com.masterman.taskbar.activity.dark.InvisibleActivityAltDark"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.Incognito.Dark"/>
         <activity
-            android:name=".activity.InvisibleActivityFreeform"
+            android:name="com.masterman.taskbar.activity.InvisibleActivityFreeform"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
             android:theme="@style/AppTheme.InvisibleActivity"/>
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.masterman.taskbar.activity.HomeActivity"
             android:label="${appName}"
             android:launchMode="singleTask"
             android:enabled="false"
@@ -109,7 +109,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.KeyboardShortcutActivity"
+            android:name="com.masterman.taskbar.activity.KeyboardShortcutActivity"
             android:label="${appName}"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
@@ -126,37 +126,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ContextMenuActivity"
+            android:name="com.masterman.taskbar.activity.ContextMenuActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:theme="@style/AppTheme.Dialog"/>
         <activity
-            android:name=".activity.dark.ContextMenuActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.ContextMenuActivityDark"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:theme="@style/AppTheme.Dialog.Dark"/>
         <activity
-            android:name=".activity.SelectAppActivity"
+            android:name="com.masterman.taskbar.activity.SelectAppActivity"
             android:theme="@style/AppTheme.Dialog.Blacklist"/>
         <activity
-            android:name=".activity.dark.SelectAppActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.SelectAppActivityDark"
             android:theme="@style/AppTheme.Dialog.Blacklist.Dark"/>
         <activity
-            android:name=".activity.DummyActivity"
+            android:name="com.masterman.taskbar.activity.DummyActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:theme="@style/AppTheme.Incognito"/>
         <activity
-            android:name=".activity.ImportSettingsActivity"
+            android:name="com.masterman.taskbar.activity.ImportSettingsActivity"
             android:theme="@style/AppTheme.Dialog"/>
         <activity
-            android:name=".activity.IconPackActivity"
+            android:name="com.masterman.taskbar.activity.IconPackActivity"
             android:theme="@style/AppTheme.Dialog.Blacklist"/>
         <activity
-            android:name=".activity.dark.IconPackActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.IconPackActivityDark"
             android:theme="@style/AppTheme.Dialog.Blacklist.Dark"/>
         <activity
-            android:name=".activity.IconPackApplyActivity"
+            android:name="com.masterman.taskbar.activity.IconPackApplyActivity"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.Dialog"
             android:exported="true">
@@ -168,7 +168,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ShortcutActivity"
+            android:name="com.masterman.taskbar.activity.ShortcutActivity"
             android:icon="@mipmap/ic_freeform_mode"
             android:label="@string/pref_header_freeform"
             android:documentLaunchMode="always"
@@ -183,7 +183,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.StartTaskbarActivity"
+            android:name="com.masterman.taskbar.activity.StartTaskbarActivity"
             android:label="@string/start_taskbar"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
@@ -197,36 +197,36 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ClearDataActivity"
+            android:name="com.masterman.taskbar.activity.ClearDataActivity"
             android:theme="@style/AppTheme.Dialog.Blacklist"/>
         <activity
-            android:name=".activity.dark.ClearDataActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.ClearDataActivityDark"
             android:theme="@style/AppTheme.Dialog.Blacklist.Dark"/>
         <activity
-            android:name=".activity.DashboardActivity"
+            android:name="com.masterman.taskbar.activity.DashboardActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.Incognito"/>
         <activity
-            android:name=".activity.dark.DashboardActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.DashboardActivityDark"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.Incognito.Dark"/>
         <activity
-            android:name=".activity.NavigationBarButtonsActivity"
+            android:name="com.masterman.taskbar.activity.NavigationBarButtonsActivity"
             android:theme="@style/AppTheme.Dialog.Preference"/>
         <activity
-            android:name=".activity.dark.NavigationBarButtonsActivityDark"
+            android:name="com.masterman.taskbar.activity.dark.NavigationBarButtonsActivityDark"
             android:theme="@style/AppTheme.Dialog.Preference.Dark"/>
 
-        <service android:name=".service.TaskbarService"/>
-        <service android:name=".service.StartMenuService"/>
-        <service android:name=".service.NotificationService"/>
-        <service android:name=".service.DashboardService"/>
+        <service android:name="com.masterman.taskbar.service.TaskbarService"/>
+        <service android:name="com.masterman.taskbar.service.StartMenuService"/>
+        <service android:name="com.masterman.taskbar.service.NotificationService"/>
+        <service android:name="com.masterman.taskbar.service.DashboardService"/>
         <service
-            android:name=".service.PowerMenuService"
+            android:name="com.masterman.taskbar.service.PowerMenuService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
@@ -237,7 +237,7 @@
                        android:resource="@xml/accessibility_service" />
         </service>
         <service
-            android:name=".service.QuickSettingsTileService"
+            android:name="com.masterman.taskbar.service.QuickSettingsTileService"
             android:label="@string/app_name"
             android:icon="@drawable/ic_allapps"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -249,14 +249,14 @@
         </service>
 
         <receiver
-            android:name=".receiver.ShowHideTaskbarReceiver"
+            android:name="com.masterman.taskbar.receiver.ShowHideTaskbarReceiver"
             android:permission="${applicationId}.START_STOP_TASKBAR" >
             <intent-filter>
                 <action android:name="com.farmerbb.taskbar.SHOW_HIDE_TASKBAR"/>
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.StartReceiver"
+            android:name="com.masterman.taskbar.receiver.StartReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="${applicationId}.START_STOP_TASKBAR" >
@@ -265,7 +265,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.QuitReceiver"
+            android:name="com.masterman.taskbar.receiver.QuitReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="${applicationId}.START_STOP_TASKBAR" >
@@ -274,7 +274,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name="com.masterman.taskbar.receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -282,14 +282,14 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.PackageUpgradeReceiver"
+            android:name="com.masterman.taskbar.receiver.PackageUpgradeReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name=".receiver.LockDeviceReceiver"
+        <receiver android:name="com.masterman.taskbar.receiver.LockDeviceReceiver"
                   android:label="${appName}"
                   android:enabled="false"
                   android:exported="true"
@@ -302,7 +302,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.SendSettingsReceiver"
+            android:name="com.masterman.taskbar.receiver.SendSettingsReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="com.farmerbb.taskbar.paid.SEND_RECEIVE_SETTINGS" >
@@ -311,7 +311,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.ReceiveSettingsReceiver"
+            android:name="com.masterman.taskbar.receiver.ReceiveSettingsReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="com.farmerbb.taskbar.SEND_RECEIVE_SETTINGS" >
@@ -320,7 +320,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.UninstallReceiver"
+            android:name="com.masterman.taskbar.receiver.UninstallReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -329,7 +329,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.EnableHomeReceiver"
+            android:name="com.masterman.taskbar.receiver.EnableHomeReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="${applicationId}.ENABLE_DISABLE_HOME" >
@@ -338,7 +338,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.DisableHomeReceiver"
+            android:name="com.masterman.taskbar.receiver.DisableHomeReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="${applicationId}.ENABLE_DISABLE_HOME" >
@@ -347,7 +347,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.ToggleFreeformModeReceiver"
+            android:name="com.masterman.taskbar.receiver.ToggleFreeformModeReceiver"
             android:permission="${applicationId}.START_STOP_TASKBAR" >
             <intent-filter>
                 <action android:name="com.farmerbb.taskbar.TOGGLE_FREEFORM_MODE"/>
